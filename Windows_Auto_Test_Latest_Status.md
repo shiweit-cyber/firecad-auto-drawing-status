@@ -1,19 +1,19 @@
 ﻿# Windows Auto Test Latest Status
 
-- update time: 2026-06-06 09:50:27 +08:00
-- phase: core_console
-- result: RUNNING
-- detail: starting Core Console regression
+- update time: 2026-06-06 09:52:32 +08:00
+- phase: git_push
+- result: OK
+- detail: 
 - guard pid: 14512
 - cycle count: 4
-- success count: 2
+- success count: 3
 - failure count: 1
 - W58-Fix complete: True
 - W59 started: False
 - W59 complete: False
 - last core result: OK_WITH_CORE_CONSOLE_EXIT_TIMEOUT_AFTER_SUCCESS
 - last CSV result: True
-- latest commit hash: 0a938bd
+- latest commit hash: 451493e
 - next run: 
 
 ## Safety
