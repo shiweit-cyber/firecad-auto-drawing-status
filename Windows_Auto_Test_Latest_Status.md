@@ -1,20 +1,20 @@
 ﻿# Windows Auto Test Latest Status
 
-- update time: 2026-06-06 09:17:45 +08:00
+- update time: 2026-06-06 09:29:55 +08:00
 - phase: sleep
 - result: WAITING
 - detail: waiting for next 10-minute cycle
 - guard pid: 14512
-- cycle count: 1
+- cycle count: 2
 - success count: 1
-- failure count: 0
+- failure count: 1
 - W58-Fix complete: True
 - W59 started: False
 - W59 complete: False
 - last core result: OK_WITH_CORE_CONSOLE_EXIT_TIMEOUT_AFTER_SUCCESS
 - last CSV result: True
-- latest commit hash: 10eebb2
-- next run: 2026-06-06 09:27:44 +08:00
+- latest commit hash: ac17ffb
+- next run: 2026-06-06 09:37:55 +08:00
 
 ## Safety
 - no payment/purchase/subscription

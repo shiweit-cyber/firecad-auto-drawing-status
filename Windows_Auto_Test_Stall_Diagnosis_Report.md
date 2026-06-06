@@ -1,88 +1,132 @@
-# Windows Auto Test Stall Diagnosis Report
+﻿# Windows Auto Test Stall Diagnosis Report
 
-- check time: 2026-06-06 00:21:32 +08:00
-- project path: E:\办公\消防CAD自动画图项目
-- Windows main execution node: yes
-- Mac participation in this project main line: temporarily paused
+- report time: 2026-06-06 09:30:40 +08:00
+- guardian running: True
+- guardian pid: 14512
+- guardian command: "C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy Bypass -File E:\办公\消防CAD自动画图项目\01_代码\scripts\windows_overnight_auto_dev.ps1 
+- latest heartbeat file: 04_AI交接/node_reports/Windows_Auto_Test_Latest_Status.md
+- latest heartbeat summary: 09:28:55 sleep / WAITING, guard pid 14512
+- forced test executed: yes, via windows_auto_loop.ps1 -Once
+- forced test result: FAILED
+- guardian scheduled test result: W58-Fix Core/CSV passed
+- Core Console stuck: 否，当前无 accoreconsole 残留
+- CSV validation in guardian: True
+- W58-Fix: True
+- W59 started: False
+- private latest commit before this report: ac17ffb
 
-## PID 34660
+## Root Cause
 
-- PID 34660 state before controlled stop: running
-- process name: powershell.exe
-- script path: E:\办公\消防CAD自动画图项目\01_代码\scripts\windows_overnight_auto_dev.ps1
-- startup command: powershell.exe -NoProfile -ExecutionPolicy Bypass -File E:\办公\消防CAD自动画图项目\01_代码\scripts\windows_overnight_auto_dev.ps1
-- start time: 2026-06-05 23:43:39 +08:00
-- CPU used: about 0.64 seconds at inspection time
-- memory used: about 96 MB at inspection time
-- process responding: true
-- action taken: controlled stop to apply upgraded guardian script
+The Windows guardian was not dead. PID 14512 was running and the latest heartbeat was inside the allowed window.
+The forced one-off auto loop did run immediately, but it failed because FIREDEMO validation still expects older demo markers/table strings while the W58/W59 code path now outputs standardized device library / numbering / CSV content.
+This is a regression mismatch in FIREDEMO validation, not a Core Console hang.
 
-## Last Two Hours Activity
+## Evidence
 
-- heartbeat/status update found: yes
-- last status update time: 2026-06-06 00:10:26 +08:00
-- automatic test log update found: yes
-- last Core Console stdout: 04_AI交接/logs/windows_overnight_coreconsole/overnight_20260606_000826_stdout.txt
-- test artifact update found: yes
-- last CSV path: C:\Temp\firecad_overnight\output\fire_device_table_demo.csv
-- commit update found: yes
-- latest local commit at inspection: 609d1be
-- push success record: previous scripted cycles attempted push, but repository is currently locally ahead 1 and behind 3 after remote activity
+- FIREINIT: OK
+- FIREINSERT: OK
+- FIRENUMBER: OK
+- FIRETABLE: OK
+- FIRECSV: OK
+- FIREDEMO: FAILED
+- CSV generated: True
+- CSV check in forced W53 auto loop: False
+- Guardian W58-Fix last core result: OK_WITH_CORE_CONSOLE_EXIT_TIMEOUT_AFTER_SUCCESS
+- Guardian last CSV result: True
 
-## Stall Root Cause
+## Current Latest Status
 
-- process exited: no
-- process alive but loop hard-deadlocked: no evidence
-- AutoCAD stuck: no, latest Core Console cycle completed and produced stdout
-- sleep/scheduling logic issue: yes, old guard slept for 10 minutes without writing heartbeat during sleep
-- GitHub push blocking: partial contributor, local branch was ahead/behind remote and `git push origin main` failed because there is no local main branch
-- exception swallowed: partial contributor, old status did not expose enough fixed latest-status detail
-- path error: no current evidence
-- final diagnosis: the guard was alive and running, but status visibility was too weak during sleep and GitHub push divergence made the remote view look stalled
+# Windows Auto Test Latest Status
 
-## GitHub Remote Check
-
-- remote: git@github.com:shiweit-cyber/firecad-auto-drawing.git
-- dbadedb exists locally: yes
-- git ls-remote origin: success
-- requested command `git push origin main`: failed
-- push failure cause: local ref `main` does not exist; repository uses `master`
-
-## Fixes Applied
-
-- added fixed latest status file: 04_AI交接/node_reports/Windows_Auto_Test_Latest_Status.md
-- every cycle start now writes a heartbeat/status update
-- Core Console start now writes a status update
-- cycle result now writes a status update
-- sleep period now writes a heartbeat/status update every minute while waiting for the next 10-minute cycle
-- cycle over 5 minutes is now recorded as TIMEOUT_RECORDED without killing the whole guard
-- push failure is recorded in the latest status file and does not block the next loop
-- `latest_to_gpt.txt` and logs remain local-only
-
-## Next Automatic Test
-
-- expected schedule: every 10 minutes after upgraded guardian restart
-- next automatic test expected: about 10 minutes after restart
+- update time: 2026-06-06 09:29:55 +08:00
+- phase: sleep
+- result: WAITING
+- detail: waiting for next 10-minute cycle
+- guard pid: 14512
+- cycle count: 2
+- success count: 1
+- failure count: 1
+- W58-Fix complete: True
+- W59 started: False
+- W59 complete: False
+- last core result: OK_WITH_CORE_CONSOLE_EXIT_TIMEOUT_AFTER_SUCCESS
+- last CSV result: True
+- latest commit hash: ac17ffb
+- next run: 2026-06-06 09:37:55 +08:00
 
 ## Safety
-
+- no payment/purchase/subscription
 - no force push
-- repository was not made public
-- no secret, token, or SSH private key committed
-- no real DWG/DXF processed
+- no real customer DWG/DXF committed
 - no customer drawing opened
 - no Tianzheng real project parsed
 - no git add .
 
-## Push Failure Original Text
 
-```text
-git : error: src refspec main does not match any
-At line:2 char:1
-+ git push origin main 2>&1
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (error: src refs...s not match any:String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
+## Forced Auto Loop Report Snapshot
 
-error: failed to push some refs to 'github.com:shiweit-cyber/firecad-auto-drawing.git'
-```
+# Windows W53 Auto Loop Report
+
+Platform: Windows
+Round: Windows-W53-AutoLoop
+Task: start Windows auto development loop
+Mode: Once
+Next check time: 2026-06-06 09:39:28
+
+## GitHub
+- pull ok: True
+- push status: yes
+- latest commit: d8dc5b458b049f16c55fd169ba59600230f7005e
+
+## Task scan
+- task dir: E:\办公\消防CAD自动画图项目\04_AI交接\tasks_pending
+- windows task count: 6
+- policy: Task files found; default safe regression executed and task presence recorded
+
+## Default regression
+| command | executed | result | core console exit |
+| --- | --- | --- | --- |
+| FIREINIT | True | OK | EXIT_TIMEOUT_AFTER_SUCCESS |
+| FIREINSERT | True | OK | EXIT_TIMEOUT_AFTER_SUCCESS |
+| FIRENUMBER | True | OK | EXIT_TIMEOUT_AFTER_SUCCESS |
+| FIRETABLE | True | OK | EXIT_TIMEOUT_AFTER_SUCCESS |
+| FIRECSV | True | OK | EXIT_TIMEOUT_AFTER_SUCCESS |
+| FIREDEMO | True | FAILED | REAL_TEST_FAILED |
+
+## CSV
+- generated: True
+- check ok: False
+- path: E:\办公\消防CAD自动画图项目\05_输出成果\device_table_output\fire_device_table_demo.csv
+
+## Core Console
+- EXIT_TIMEOUT_AFTER_SUCCESS count: 5
+- REAL_TEST_FAILED count: 
+- policy: success markers win; timeout after success is not a real test failure
+
+## Safety
+- no payment, purchase, or subscription
+- no force push
+- repository was not made public
+- no private key output
+- no real DWG/DXF committed
+- no real customer drawing opened
+- no Tianzheng real project parsed
+
+Conclusion: FAILED
+
+
+## Fix Recommendation
+
+1. Keep the overnight guardian running.
+2. Next development fix should update FIREDEMO validation to match W58/W59 standardized device markers, numbering, and CSV schema.
+3. Do not treat this as a guardian stall.
+4. Continue syncing public status after every forced/manual check.
+
+## Safety
+
+- private main repository remains private
+- public status repository only receives whitelisted status files
+- no DWG/DXF/PDF/images uploaded
+- no customer data uploaded
+- no secrets/token/API key/SSH key uploaded
+- no force push
