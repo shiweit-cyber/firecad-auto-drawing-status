@@ -1,12 +1,12 @@
 ﻿# FIRE Auto Run Status
 
-- update time: 2026-06-08 00:03:20 +08:00
+- update time: 2026-06-08 00:08:32 +08:00
 - project: 消防 CAD 自动画图项目
-- current round: FIRE-W81
+- current round: FIRE-W83
 - queue status: task completed
 - next task: next pending FIRE-W task
-- guard pid: 35016
-- last report: 04_AI交接\node_reports\FIRE-W81_AutoQueue_Report.md
+- guard pid: 32252
+- last report: 04_AI交接\node_reports\FIRE-W83_AutoQueue_Report.md
 
 ## Queue Policy
 
@@ -32,11 +32,3 @@
 - no token/key/password/API key/SSH private key submitted
 - no force push
 - no git add .
-
-## Night Saver
-
-- FIRE-NIGHT-SAVER: enabled
-- success reports: short, under 30 lines
-- failure reports: detailed with raw error text
-- safety checks: retained
-- Git/CSV/FIREDEMO/W58/W59 checks: retained
