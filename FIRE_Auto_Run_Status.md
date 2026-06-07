@@ -32,3 +32,11 @@
 - no token/key/password/API key/SSH private key submitted
 - no force push
 - no git add .
+
+## FIRE-AUTOQUEUE-06
+
+- W81-W100 clear task queue: prepared
+- W101 and later planned: no
+- current principle: only plan as far as the work is clear
+- after W100: stop automatic expansion and wait for Tang boss confirmation
+- real customer drawings: not handled
