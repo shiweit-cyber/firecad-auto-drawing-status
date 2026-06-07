@@ -1,12 +1,12 @@
 ﻿# FIRE Auto Run Status
 
-- update time: 2026-06-08 00:08:32 +08:00
+- update time: 2026-06-08 00:28:38 +08:00
 - project: 消防 CAD 自动画图项目
-- current round: FIRE-W83
+- current round: FIRE-W84
 - queue status: task completed
 - next task: next pending FIRE-W task
-- guard pid: 32252
-- last report: 04_AI交接\node_reports\FIRE-W83_AutoQueue_Report.md
+- guard pid: 29464
+- last report: 04_AI交接\node_reports\FIRE-W84_AutoQueue_Report.md
 
 ## Queue Policy
 
@@ -32,27 +32,3 @@
 - no token/key/password/API key/SSH private key submitted
 - no force push
 - no git add .
-- no foreground Explorer/AutoCAD/Excel/PPT/Markdown window should be opened by default
-- reports/output paths should be written to status or reports instead of opened
-- AutoCAD/Core Console is allowed only when the current task explicitly requires CAD regression or GUI verification
-
-## FIRE-AUTOQUEUE-06
-
-- W81-W100 clear task queue: prepared
-- W101 and later planned: no
-- current principle: only plan as far as the work is clear
-- after W100: stop automatic expansion and wait for Tang boss confirmation
-- real customer drawings: not handled
-
-## FIRE-AUTO-RUN-CONTINUE
-
-- update time: 2026-06-08 00:25:00 +08:00
-- continuous queue execution: enabled
-- current running task: none
-- next task: FIRE-W84
-- pending count: 17
-- done count: 21
-- failed count: 0
-- success behavior: short report, commit, push, sync public status, continue next task
-- failure behavior: detailed diagnostics, move to tasks_failed, stop later development tasks
-- foreground window policy: disabled by default
