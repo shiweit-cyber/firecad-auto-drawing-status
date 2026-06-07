@@ -1,6 +1,6 @@
 ﻿# FIRE Live Queue Status
 
-- 更新时间: 2026-06-08 01:32:34 +08:00
+- 更新时间: 2026-06-08 01:44:52 +08:00
 - 当前阶段: cycle_start
 - 当前守护 PID: 29464
 - 当前正在执行的任务: none
@@ -10,13 +10,13 @@
 - tasks_running 数量: 0
 - tasks_done 数量: 38
 - tasks_failed 数量: 0
-- 最近心跳时间: [2026-06-08 01:32:30 +08:00] WINDOWS_AUTO_LOOP_CYCLE_START
-- 最近一次 WINDOWS_AUTO_LOOP_CYCLE_OK 时间: [2026-06-08 01:22:30 +08:00] WINDOWS_AUTO_LOOP_CYCLE_OK
+- 最近心跳时间: [2026-06-08 01:44:48 +08:00] WINDOWS_AUTO_LOOP_CYCLE_START
+- 最近一次 WINDOWS_AUTO_LOOP_CYCLE_OK 时间: [2026-06-08 01:34:48 +08:00] WINDOWS_AUTO_LOOP_CYCLE_OK
 - Git 工作区是否干净: True
 - Core Console 是否存在: False
 - Core Console 说明: none
-- 私有仓库最新 commit: 6ba3ff6
-- 公共状态仓库最新 commit: f64ce6b
+- 私有仓库最新 commit: 60e5075
+- 公共状态仓库最新 commit: 137a944
 - 是否需要人工干预: no
 
 ## Queue Directories
