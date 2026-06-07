@@ -32,3 +32,11 @@
 - no token/key/password/API key/SSH private key submitted
 - no force push
 - no git add .
+
+## Night Saver
+
+- FIRE-NIGHT-SAVER: enabled
+- success reports: short, under 30 lines
+- failure reports: detailed with raw error text
+- safety checks: retained
+- Git/CSV/FIREDEMO/W58/W59 checks: retained
