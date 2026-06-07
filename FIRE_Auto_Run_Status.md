@@ -43,3 +43,16 @@
 - current principle: only plan as far as the work is clear
 - after W100: stop automatic expansion and wait for Tang boss confirmation
 - real customer drawings: not handled
+
+## FIRE-AUTO-RUN-CONTINUE
+
+- update time: 2026-06-08 00:25:00 +08:00
+- continuous queue execution: enabled
+- current running task: none
+- next task: FIRE-W84
+- pending count: 17
+- done count: 21
+- failed count: 0
+- success behavior: short report, commit, push, sync public status, continue next task
+- failure behavior: detailed diagnostics, move to tasks_failed, stop later development tasks
+- foreground window policy: disabled by default
