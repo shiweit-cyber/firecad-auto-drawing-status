@@ -1,12 +1,12 @@
 ﻿# FIRE Auto Run Status
 
-- update time: 2026-06-07 FIRE-AUTOQUEUE-03
+- update time: 2026-06-07 23:08:26 +08:00
 - project: 消防 CAD 自动画图项目
-- current round: FIRE-AUTOQUEUE-03
-- queue status: W63-W80 queue prepared
-- next task: smallest pending FIRE-W task, currently FIRE-W68 unless guard advances first
-- guard pid: 38812
-- last report: 04_AI交接\node_reports\FIRE-AUTOQUEUE-03_W63_W80_Task_Queue_Report.md
+- current round: FIRE-W68
+- queue status: task completed
+- next task: next pending FIRE-W task
+- guard pid: 38016
+- last report: 04_AI交接\node_reports\FIRE-W68_AutoQueue_Report.md
 
 ## Queue Policy
 
@@ -16,15 +16,6 @@
 - failed dir: 04_AI交接/tasks_failed
 - one task per guard cycle: yes
 - failed task stops later development tasks: yes
-- W63-W80 handlers in guard: yes
-- success state auto-commit: yes
-- failed state auto-commit: yes
-
-## Queue Range
-
-- W63-W67: done
-- W68-W70: pending before FIRE-AUTOQUEUE-03
-- W71-W80: added to tasks_pending by FIRE-AUTOQUEUE-03
 
 ## Current Stable Baseline
 
