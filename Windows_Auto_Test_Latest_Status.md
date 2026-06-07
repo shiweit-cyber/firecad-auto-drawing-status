@@ -1,19 +1,19 @@
 ﻿# Windows Auto Test Latest Status
 
-- update time: 2026-06-06 14:41:40 +08:00
+- update time: 2026-06-07 07:55:34 +08:00
 - phase: git_push
 - result: OK
-- detail: PUSH_OK_AFTER_REBASE
+- detail: 
 - guard pid: 14512
-- cycle count: 27
-- success count: 26
+- cycle count: 111
+- success count: 110
 - failure count: 1
 - W58-Fix complete: True
 - W59 started: False
 - W59 complete: False
 - last core result: OK_WITH_CORE_CONSOLE_EXIT_TIMEOUT_AFTER_SUCCESS
 - last CSV result: True
-- latest commit hash: a9be2ff
+- latest commit hash: ecba002
 - next run: 
 
 ## Safety
