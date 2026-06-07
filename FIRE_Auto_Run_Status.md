@@ -32,6 +32,9 @@
 - no token/key/password/API key/SSH private key submitted
 - no force push
 - no git add .
+- no foreground Explorer/AutoCAD/Excel/PPT/Markdown window should be opened by default
+- reports/output paths should be written to status or reports instead of opened
+- AutoCAD/Core Console is allowed only when the current task explicitly requires CAD regression or GUI verification
 
 ## FIRE-AUTOQUEUE-06
 
