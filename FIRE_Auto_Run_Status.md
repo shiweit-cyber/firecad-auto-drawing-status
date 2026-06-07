@@ -1,61 +1,37 @@
 # FIRE Auto Run Status
 
-- update time: 2026-06-07 20:08 +08:00
+- update time: 2026-06-07 21:15 +08:00
 - project: 消防 CAD 自动画图项目
-- status round: FIRE-S02
-- actual git project path: E:\办公\消防CAD自动画图项目
-- requested path note: C:\Users\Administrator\Documents\自动画图 exists but is not the Git repository
+- current round: FIRE-AUTOQUEUE-01
+- queue status: W63-W70 task queue prepared
+- next task: FIRE-W63
+- guard pid before script reload: 21804
 
-## Current Auto Run Status
+## Queue Ready
 
-- Windows guard status: running
-- Windows guard PID: 21804
-- guard start time: 2026-06-07 18:13:09 +08:00
-- latest stable heartbeat: 2026-06-07 19:38:43 +08:00 WINDOWS_AUTO_LOOP_CYCLE_OK
-- latest guard warning: 2026-06-07 20:00:36 +08:00 pull blocked by unstaged W61 script change
-- Core Console stale process: none observed
+- W63-W70 queue: ready
+- pending dir: 04_AI交接/tasks_pending
+- running dir: 04_AI交接/tasks_running
+- done dir: 04_AI交接/tasks_done
+- failed dir: 04_AI交接/tasks_failed
+- one task per guard cycle: yes
+- failed task stops later development tasks: yes
 
-## FIRE-W60 Status
+## Next Task
 
-- FIRE-W60: completed and rechecked
-- FIRE-W60 fix commit: d6005b4
-- FIREDEMO_SUCCESS: True
-- FIREDEMO exit status: EXIT_TIMEOUT_AFTER_SUCCESS
-- W58-Fix: PASS
-- CSV_CHECK_OK: True
-- W59 started: True
+FIRE-W63：增强标准 BOQ v1 字段完整性校验。
 
-## W59 Numbering Coverage
+## Stable Baseline
 
-- Smoke detector: Y-001, Y-002, Y-003
-- Manual call point: S-001, S-002, S-003
-- Sounder strobe: SG-001, SG-002, SG-003
-- CSV export: available
-- CSV auto validation: available
+- FIRE-W60 completed: FIREDEMO fixed
+- FIRE-W61 completed: sensitive path check fixed
+- FIRE-W62 completed: W59 numbering expanded
+- FIREDEMO_SUCCESS=True
+- CSV_CHECK_OK=True
+- W58-Fix=PASS
+- W59 numbering: HYDRANT XH-001; SPRINKLER SP-001; SMOKE Y-001/Y-002/Y-003; MCP S-001/S-002/S-003; SOUNDER SG-001/SG-002/SG-003; MODULE MOD-001
 
-## GitHub Sync Status
-
-- private main repository branch: master
-- private main repository latest known commit before FIRE-S02: 8333d1e
-- public status repository latest known commit before FIRE-S02: b3f3937
-- public status mirror rule: status/report only; no source code, drawings, customer data, or secrets
-
-## Current Non-Blocking Warning
-
-- warning: Test-Path path compatibility issue was observed in the sensitive check workflow
-- warning detail: Test-Path : 路径中具有非法字符。
-- current handling: FIRE-W61 is the next task to fix path compatibility and keep illegal paths as warnings only
-- latest local observation: W61 local script change exists and must be committed separately; FIRE-S02 will not stage it
-
-## Next Step
-
-FIRE-W61:
-
-- fix sensitive check path handling
-- prevent empty, invalid, newline, wildcard, and quoted Git paths from crashing the guard
-- keep FIREDEMO, W58-Fix, CSV validation, and W59 numbering regression passing
-
-## Safety Boundary
+## Safety
 
 - no real customer drawings handled
 - no DWG/DXF/PDF/Excel/zip/7z/rar submitted
