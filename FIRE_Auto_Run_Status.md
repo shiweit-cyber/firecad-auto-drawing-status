@@ -1,12 +1,12 @@
 ﻿# FIRE Auto Run Status
 
-- update time: 2026-06-08 00:00:29 +08:00
+- update time: 2026-06-08 00:03:20 +08:00
 - project: 消防 CAD 自动画图项目
-- current round: FIRE-W80
+- current round: FIRE-W81
 - queue status: task completed
 - next task: next pending FIRE-W task
 - guard pid: 35016
-- last report: 04_AI交接\node_reports\FIRE-W80_AutoQueue_Report.md
+- last report: 04_AI交接\node_reports\FIRE-W81_AutoQueue_Report.md
 
 ## Queue Policy
 
