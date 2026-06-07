@@ -1,12 +1,12 @@
 ﻿# FIRE Auto Run Status
 
-- update time: 2026-06-07 FIRE-AUTOQUEUE-04
+- update time: 2026-06-07 FIRE-AUTOQUEUE-05
 - project: 消防 CAD 自动画图项目
-- current round: FIRE-AUTOQUEUE-04
-- queue status: W63-W90 queue prepared; W68 remains latest completed queued task
-- next task: FIRE-W69
-- guard pid: 38016
-- last report: 04_AI交接\node_reports\FIRE-AUTOQUEUE-04_Extend_Task_Queue_To_W90_Report.md
+- current round: FIRE-AUTOQUEUE-05
+- queue status: continuous queue mode enabled; FIRE-W69 remains latest completed queued task
+- next task: FIRE-W70
+- guard pid: 39800
+- last report: 04_AI交接\node_reports\FIRE-AUTOQUEUE-05_Continuous_Queue_Mode_Report.md
 
 ## Queue Policy
 
@@ -16,16 +16,14 @@
 - failed dir: 04_AI交接/tasks_failed
 - one task per guard cycle: yes
 - failed task stops later development tasks: yes
-- W63-W90 handlers in guard: yes
-- success state auto-commit: yes
-- failed state auto-commit: yes
+- continuous mode: yes; pending FIRE tasks use short loop wait
+- public status repository sync after private push: yes
 
 ## Queue Range
 
-- W63-W68: done
-- W69-W80: retained pending queue
-- W81-W90: appended to tasks_pending by FIRE-AUTOQUEUE-04
-- queue order: continue from FIRE-W69; do not jump to FIRE-W81
+- W63-W69: done
+- W70-W90: pending unless guard advances first
+- queue order: continue from FIRE-W70
 
 ## Current Stable Baseline
 
