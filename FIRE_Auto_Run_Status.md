@@ -1,12 +1,12 @@
 ﻿# FIRE Auto Run Status
 
-- update time: 2026-06-07 FIRE-AUTOQUEUE-05
+- update time: 2026-06-07 23:35:16 +08:00
 - project: 消防 CAD 自动画图项目
-- current round: FIRE-AUTOQUEUE-05
-- queue status: continuous queue mode enabled; FIRE-W69 remains latest completed queued task
-- next task: FIRE-W70
-- guard pid: 39800
-- last report: 04_AI交接\node_reports\FIRE-AUTOQUEUE-05_Continuous_Queue_Mode_Report.md
+- current round: FIRE-W70
+- queue status: task completed
+- next task: next pending FIRE-W task
+- guard pid: 35016
+- last report: 04_AI交接\node_reports\FIRE-W70_AutoQueue_Report.md
 
 ## Queue Policy
 
@@ -16,14 +16,6 @@
 - failed dir: 04_AI交接/tasks_failed
 - one task per guard cycle: yes
 - failed task stops later development tasks: yes
-- continuous mode: yes; pending FIRE tasks use short loop wait
-- public status repository sync after private push: yes
-
-## Queue Range
-
-- W63-W69: done
-- W70-W90: pending unless guard advances first
-- queue order: continue from FIRE-W70
 
 ## Current Stable Baseline
 
