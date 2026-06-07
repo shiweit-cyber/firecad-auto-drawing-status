@@ -21,6 +21,7 @@
 - FIREDEMO: PASS
 - W59 supported numbering: SMOKE Y-001/Y-002/Y-003; MCP S-001/S-002/S-003; SOUNDER SG-001/SG-002/SG-003
 - latest private commit hash: pending until FIRE-W60 commit is finalized
+- latest public status commit hash: b3f3937
 - next run: keep guard running and continue W59 numbering expansion
 
 ## Safety
