@@ -32,3 +32,14 @@
 - no token/key/password/API key/SSH private key submitted
 - no force push
 - no git add .
+
+## FIRE-AUTOQUEUE-08
+
+- update time: 2026-06-08
+- W101-W110 clear task queue: created
+- W111 and later planned: no
+- next task: FIRE-W101
+- principle: plan only as far as the work is clear; no placeholder tasks
+- after W110: stop automatic expansion and wait for Tang boss/GPT confirmation
+- foreground window policy: disabled by default
+- real customer drawings: not handled
