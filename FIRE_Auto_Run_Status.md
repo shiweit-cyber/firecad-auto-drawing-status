@@ -1,12 +1,12 @@
 ﻿# FIRE Auto Run Status
 
-- update time: 2026-06-08 01:09:17 +08:00
+- update time: 2026-06-08 09:09:17 +08:00
 - project: 消防 CAD 自动画图项目
-- current round: FIRE-W100
+- current round: FIRE-W101
 - queue status: task completed
 - next task: next pending FIRE-W task
-- guard pid: 29464
-- last report: 04_AI交接\node_reports\FIRE-W100_AutoQueue_Report.md
+- guard pid: 29148
+- last report: 04_AI交接\node_reports\FIRE-W101_AutoQueue_Report.md
 
 ## Queue Policy
 
@@ -32,14 +32,3 @@
 - no token/key/password/API key/SSH private key submitted
 - no force push
 - no git add .
-
-## FIRE-AUTOQUEUE-08
-
-- update time: 2026-06-08
-- W101-W110 clear task queue: created
-- W111 and later planned: no
-- next task: FIRE-W101
-- principle: plan only as far as the work is clear; no placeholder tasks
-- after W110: stop automatic expansion and wait for Tang boss/GPT confirmation
-- foreground window policy: disabled by default
-- real customer drawings: not handled
