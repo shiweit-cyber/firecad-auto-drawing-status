@@ -1,29 +1,29 @@
 ﻿# FIRE Live Queue Status
 
-- 更新时间: 2026-06-08 14:16:25 +08:00
+- 更新时间: 2026-06-08 14:18:56 +08:00
 - 当前阶段: task_success
 - 当前守护 PID: 31860
 - 当前正在执行的任务: none
-- 最近完成任务: FIRE-W108
-- 下一任务: FIRE-W109
-- tasks_pending 数量: 2
+- 最近完成任务: FIRE-W109
+- 下一任务: FIRE-W110
+- tasks_pending 数量: 1
 - tasks_running 数量: 0
-- tasks_done 数量: 46
+- tasks_done 数量: 47
 - tasks_failed 数量: 0
-- 最近心跳时间: [2026-06-08 14:14:46 +08:00] WINDOWS_AUTO_LOOP_CYCLE_START
-- 最近一次 WINDOWS_AUTO_LOOP_CYCLE_OK 时间: [2026-06-08 12:07:44 +08:00] WINDOWS_AUTO_LOOP_CYCLE_OK
+- 最近心跳时间: [2026-06-08 14:17:17 +08:00] WINDOWS_AUTO_LOOP_CYCLE_START
+- 最近一次 WINDOWS_AUTO_LOOP_CYCLE_OK 时间: [2026-06-08 14:17:12 +08:00] WINDOWS_AUTO_LOOP_CYCLE_OK
 - Git 工作区是否干净: False
 - Core Console 是否存在: False
 - Core Console 说明: none
-- 私有仓库最新 commit: e4353a9
-- 公共状态仓库最新 commit: 8e4b81e
+- 私有仓库最新 commit: 488e04a
+- 公共状态仓库最新 commit: 85f0d03
 - 是否需要人工干预: warning: git workspace has non-live-status changes
 
 ## Queue Directories
 
-- pending: FIRE-W109, FIRE-W110
+- pending: FIRE-W110
 - running: 
-- done latest: FIRE-W108
+- done latest: FIRE-W109
 - failed: 
 
 ## Safety
