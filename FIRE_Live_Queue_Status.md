@@ -1,7 +1,7 @@
 ﻿# FIRE Live Queue Status
 
-- 更新时间: 2026-06-09 13:46:19 +08:00
-- 当前阶段: task_success
+- 更新时间: 2026-06-09 13:47:27 +08:00
+- 当前阶段: cycle_start
 - 当前守护 PID: 36452
 - 当前正在执行的任务: none
 - 最近完成任务: FIRE-W111
@@ -10,13 +10,13 @@
 - tasks_running 数量: 0
 - tasks_done 数量: 49
 - tasks_failed 数量: 0
-- 最近心跳时间: [2026-06-09 13:44:35 +08:00] WINDOWS_AUTO_LOOP_CYCLE_START
-- 最近一次 WINDOWS_AUTO_LOOP_CYCLE_OK 时间: [2026-06-08 14:22:07 +08:00] WINDOWS_AUTO_LOOP_CYCLE_OK
+- 最近心跳时间: [2026-06-09 13:47:23 +08:00] WINDOWS_AUTO_LOOP_CYCLE_START
+- 最近一次 WINDOWS_AUTO_LOOP_CYCLE_OK 时间: [2026-06-09 13:47:18 +08:00] WINDOWS_AUTO_LOOP_CYCLE_OK
 - Git 工作区是否干净: False
 - Core Console 是否存在: False
 - Core Console 说明: none
-- 私有仓库最新 commit: 3ad8df9
-- 公共状态仓库最新 commit: 94d2f59
+- 私有仓库最新 commit: f43f747
+- 公共状态仓库最新 commit: e1e9c56
 - 是否需要人工干预: warning: git workspace has non-live-status changes
 
 ## Queue Directories
